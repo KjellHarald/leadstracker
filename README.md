@@ -10,6 +10,6 @@
 **Note** This plugin does only work in Google Chrome.
 
 ## Install
-Go to [chrome://extensions](chrome://extensions) -> Development mode -> Load Unpacked.
+Go to [chrome://extensions](http://chrome://extensions) -> Development mode -> Load Unpacked.
 
 ![Screenshot](https://github.com/KjellHarald/leadstracker/blob/main/leadstracker.png?raw=true)
