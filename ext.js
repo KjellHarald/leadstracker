@@ -1,6 +1,6 @@
 let store = [];
 const btn = document.getElementById("btn");
-const add = document.getElementById("add");
+const wrapUrls = document.getElementById("wrap-urls");
 const save = document.getElementById("save");
 const rmfirst = document.getElementById("rmfirst");
 const rmlast = document.getElementById("rmlast");
@@ -10,7 +10,7 @@ const clear = document.getElementById("clear");
 const pushStorage = () => localStorage.setItem("store", JSON.stringify(store));
 
 const render = () => {
-  btn.innerHTML = "";
+  wrapUrls.innerHTML = "";
 
   let links = store.map((e) => {
     const child = document.createElement("a");
@@ -22,7 +22,7 @@ const render = () => {
 
   //links = links.filter((e) => e !== undefined);
 
-  btn.append(...links);
+  wrapUrls.append(...links);
 
   wrap.innerHTML = "";
   const base64 = btoa(JSON.stringify(store));
